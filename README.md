@@ -1,5 +1,11 @@
 # DuckLite
 
+DuckLite 是一個低成本、完整開源硬體的視覺雙足機器人平台，目標是讓使用者能以
+約 US$150 的單件零售零件自行組裝、訓練及修改。
+
+DuckLite is a low-cost, fully open-hardware vision biped platform targeting an
+approximately US$150 self-build using single-unit retail parts.
+
 DuckLite is an open-hardware, low-cost vision biped designed for learning,
 simulation, reinforcement learning, and physical experimentation.
 
@@ -14,7 +20,7 @@ The first target is **DuckLite Vision v0.1**:
 
 ## Start here
 
-- [Hardware replacement and cost table](docs/hardware-comparison.md)
+- [硬體替代與成本比較 / Hardware replacement and cost table](docs/hardware-comparison.md)
 - [Hardware workspace](hardware/README.md)
 - [Bridge firmware](firmware/README.md)
 - [Compatibility software](software/README.md)
