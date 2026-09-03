@@ -26,20 +26,24 @@ The first target is **DuckLite Vision v0.1**:
 - [Compatibility software](software/README.md)
 - [Simulation workspace](simulation/README.md)
 
-## Compatibility target
+## Microduck software compatibility
 
-DuckLite is not a copy of Microduck hardware. Compatibility means preserving the
-software-facing contract where practical:
+DuckLite aims to provide a low-cost, open-hardware platform for the open-source
+Microduck software ecosystem.
 
-- joint IDs `10-14`, `20-24`, and `30-34`
-- IMU bridge ID `200`
-- Dynamixel Protocol 2 transport presented to the host
-- 14 policy-controlled joints plus one beak joint
-- the existing 61-value observation and 14-action ONNX policy shape
+Initial compatibility targets include:
 
-Some low-cost devices need a DuckLite driver or bridge. Those differences are
-tracked explicitly in the hardware comparison instead of being described as
-drop-in compatible.
+- the 50 Hz robot control loop
+- public joint and IMU interfaces
+- ONNX locomotion policies
+- the [`microduck_rl`](https://github.com/pollen-robotics/microduck_rl) MuJoCo,
+  PPO, and sim-to-real training pipeline
+
+DuckLite hardware and bridge firmware are independently developed. Compatibility
+is a target and will be verified progressively on physical prototypes.
+
+中文：DuckLite 希望成為 Microduck 開源軟體生態的低成本開源硬體平台，優先支援
+其控制介面、ONNX 行走模型，以及 `microduck_rl` 模擬與訓練流程。
 
 ## Status
 
